@@ -4,7 +4,8 @@
     <title>Learning Flask</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"
+
   </head>
   <body>
     <h1>Hello !</h1>
@@ -13,10 +14,12 @@
     <p>Today is <b>{{ d }}</b> </p>
     <p>My name is {{ n }}</p>
     
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/56a21574819665.5c3b944263b50.jpg" alt="">
-    <img src="https://accredited-times.com/wp-content/uploads/2017/08/Alt-right-hackers.png" alt="">
-    <img src="https://www.toolfarm.com/images/uploads/blog/xmaxon_labs_blog.jpg.pagespeed.ic.fHn-sP082l.jpg" alt="">
-    <img src="https://images.wallpapersden.com/image/download/hackers-shop_a2ZqbGmUmZqaraWkpJRmbmdlrWZlbWU.jpg" alt="">
+    <div class="pics">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/56a21574819665.5c3b944263b50.jpg" alt="">
+        <img src="https://longreef.ru/img/blog/ekspert_zashchishchennye_pochtovye_servisy_ne_obespechivayut_bezopasnost_na_100620681026524d.jpg" alt="hacker thinking">
+        <img src="https://u24.ru/img/news/article_big_435141524494595.jpg" alt="hacker hacking">
+        <img src="https://www.toolfarm.com/images/uploads/blog/xmaxon_labs_blog.jpg.pagespeed.ic.fHn-sP082l.jpg" alt="">
+    </div>
     <code>
       # To run flask application<br>
       # run this command<br>
